@@ -8,7 +8,7 @@ export default function Feature() {
         <>
 
         {/* Section 1 code here */}
-
+        <h1>Features</h1> 
 
 
         {/* Section 2 code here */}
