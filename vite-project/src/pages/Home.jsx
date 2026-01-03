@@ -8,8 +8,11 @@ export default function Home() {
   return (
 
     <>
-      {/* Section 1 code here */}
 
+    
+
+      {/* Section 1 code here */}
+      <h1>Welcome to ViWork Tech</h1>
 
 
       {/* Section 2 code here */}

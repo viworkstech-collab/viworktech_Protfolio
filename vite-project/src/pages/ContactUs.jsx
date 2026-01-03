@@ -8,6 +8,7 @@ export default function ContactUs() {
         <>
 
         {/* Section 1 code here */}
+        <h1>Contact Us</h1>
 
 
 

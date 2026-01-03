@@ -11,8 +11,9 @@ import "./App.css";
 export default function App() {
   return (
     <>
-    <Navbar />
+    <Navbar /> 
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/Home" element={<Home />}/>
       <Route path="/AboutUs" element={<AboutUs />}/>
       <Route path="/ContactUs" element={<ContactUs />}/>
@@ -21,5 +22,5 @@ export default function App() {
     <Footer />
     
     </>
-  )
+  );
 }

@@ -5,6 +5,7 @@ import "./footer.css";
 export default function Footer() {
 
   return (
-      {/*------------------FOOTER CODE ------------------------*/}
+      
+      <p></p>
   );
 }

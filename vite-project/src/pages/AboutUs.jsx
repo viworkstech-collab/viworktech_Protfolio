@@ -6,10 +6,12 @@ export default function AboutUs() {
 
   return (
       <>
+      <Navbar />
       {/* Section 1 code here */}
+      <h1>About Us</h1>
 
 
-
+ 
       {/* Section 2 code here */}
 
 
