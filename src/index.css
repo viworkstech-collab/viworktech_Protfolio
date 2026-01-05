@@ -1,0 +1,10 @@
+:root{
+  --background-color:#050D1D; /* Dark Blue */
+  --background-color-secondary:white; /* White */
+
+  --text-color:white; /* White */
+  --text-color-secondary:#94A3B8; /* Light Gray */
+
+  --btn-bg-color:rgb(167, 62, 167); /* Button Background Color */
+  --btn-text-color:white; /* Button Text Color */
+}

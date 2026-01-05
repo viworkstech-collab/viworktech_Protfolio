@@ -1,0 +1,92 @@
+
+/*------------------FOOTER CSS------------------------*/
+.Footer-Container{
+  background-color: #050D1D;
+  width: 100%;
+}
+.Footer-Content-Container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  padding: 64px 160px 32px;
+  gap: 3rem;
+}
+.Footer-Section-1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  
+}
+.Company-Content{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin: 0 0 24px 0;
+}
+.Viworktech-logo-footer{
+  height: 60px;
+  width: 60px;
+}
+.Company-Name-Footer{
+  color: white;
+  font-size: 18px;
+}
+.Company-brief{
+  color: #94A3B8;
+  font-size: 14px;
+}
+.Company-brief-container{
+  align-items: start;
+  justify-content: start;
+  margin: 0px 0px 24px 0px;
+}
+.Footer-SocialMedia-Content{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.Social-Media-Box{
+  padding: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  color: #94A3B4;
+  background-color: #102346;
+  font-size: 14px;
+}
+.Social-Media-Box:hover{
+ background-color: rgb(122 63 255 / 0.2);
+ color: rgb(255, 255, 255);
+ cursor: pointer;
+}
+.Section-2-content,.Section-3-content,.Section-4-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  row-gap: 16px;
+}
+.Title{
+  color: white;
+  font-size: 16px;
+}
+.Product-Links,.Company-Links,.Legal-Links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.Product-Link,.Company-Link,.Legal-Link{
+  color: var(--text-color-secondary);
+  font-size: 14px;
+}
+.Product-Link a,.Company-Link a,.Legal-Link a{
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+.Product-Link a:hover,.Company-Link a:hover,.Legal-Link a:hover{
+  color: rgb(122 63 255);
+  cursor: pointer;
+}
