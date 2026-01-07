@@ -1,38 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.hom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(40px, 8vw, 80px);
+  background-color: navy;
+  color: white;
+  gap: clamp(20px, 5vw, 60px);
+}
+
+.homleft {
+  max-width: 50%;
+}
+
+.tagline 
+{
+  color: white;
+  background-color: purple;
+  width: 25%;
+  border-radius:20px;
+}
+.tagline:hover{
+  box-shadow:0 0 20px white;
+}
+
+.homleft h1 
+{
+  margin-top: clamp(12px, 3vw, 20px);
+  font-size: clamp(32px, 6vw, 45px);
+}
+
+.homleft h1 span 
+{
+  color: purple;
+  font-weight: bold;
+}
+
+.homleft p 
+{
+  margin-top: clamp(10px, 2vw, 15px);
+  font-size: clamp(16px, 2.5vw, 18px);
+  opacity: 0.85;
+}
+
+.homright img 
+{
+  width: clamp(260px, 35vw, 420px);
+}
+
+.services 
+{
+  padding: clamp(40px, 8vw, 80px);
+  background-color: #060f27;
+}
+
+.services h2 
+{
+  font-size: clamp(25px, 4vw, 34px);
+  color: white;
+}
+
+.cards 
+{
+  display: flex;
+  gap: clamp(16px, 4vw, 30px);
+  margin-top: clamp(20px, 5vw, 30px);
+}
+
+.card 
+{
+  background-color: purple;
+  padding: clamp(20px, 4vw, 30px);
+  border-radius: 12px;
+  font-size: clamp(15px, 2.5vw, 16px);
+}
+
+.contact 
+{
+  padding: clamp(40px, 8vw, 80px);
+  background-color: navy;
+  color: white;
+}
+
+.contact h2 
+{
+  font-size: clamp(24px, 4vw, 32px);
+}
+
+.contact p 
+{
+  margin-top: clamp(10px, 2vw, 15px);
+  font-size: clamp(20px, 2.5vw, 25px);
+}
 
 
-
-
-
-
-
-
-
-/*---------------------------- Section 1 Styles----------------------------*/
-
-
-
-
-
-
-/*---------------------------- Section 2 Styles----------------------------*/
-
-
-
-
-
-
-/*---------------------------- Section 3 Styles----------------------------*/
-
-
-
-
-
-
-/*---------------------------- Section 4 Styles----------------------------*/
-
-
-
-
-
-
-
+.card:hover{
+  box-shadow:0 0 10px white;
+}
