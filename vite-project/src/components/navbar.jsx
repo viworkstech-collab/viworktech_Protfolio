@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./navbar.css";
 import logo from '../assets/Viworktech-logos/Viwork-tech-logo-purple-removebg-preview.png';
 import { Link } from 'react-router-dom';
-import menuIcon from '../assets/Viworktech-logos/menu.png';
+import {Menu} from 'lucide-react'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,11 @@ export default function Navbar() {
         
 
         <div className='mobile-menu'>
-          <img src={menuIcon} className='menu-icon' onClick={toggleMenu}  />
+          <Menu
+            className='menu-icon'
+            onClick={toggleMenu}
+            color='white'
+            />
           {isMenuOpen && (
             <div className='dropdown-menu'>
               <Link to="/Home" className='Link-container' onClick={toggleMenu}>Home</Link>
