@@ -3,12 +3,15 @@
 .Footer-Container{
     background-color: #050d1d;
     width: 100%;
-    height: auto;
-    padding: 64px 80px 32px 80px;
+    padding: clamp(24px,5vw,72px) clamp(16px,6vw,120px);
+    box-sizing: border-box;
 }
 .Footer-Grid{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: clamp(24px, 4vw, 48px);
+    max-width: 1400px;
+    margin-inline:auto ;
 }
 .Footer-Section1{
   display: flex;
@@ -19,38 +22,39 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  margin-bottom: 24px;
+  gap: clamp(16px,2vw,16px);
+  margin-bottom: clamp(16px,3vw,24px);
 }
 .Footer-Viworktech-img{
-  width: 60px;
+  width: clamp(40px,5vw,60px);
   height: 60px;
 }
 .Footer-Header{
-  font-size: 18px;
+  font-size: clamp(16px,2.2vw,20px);
   color: #ffffff;
 }
 .Footer-Brief{
- margin-bottom: 24px;
+ margin-bottom: clamp(16px,3vw,24px);
  justify-content: start;
  align-items: center;
 }
 .Footer-Brief-Paragraph{
   color: rgb(148 163 184);
-  font-size: 14px;
+  font-size: clamp(13px,1.8vw,15px);
   max-width: 320px;
-  line-height: 20px;
+  line-height: 1.6;
 }
 .Social-Media-Handle{
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: clamp(10px,2vw,16px);
 }
 .Social-Media-Box{
-  padding: 8px;
+  padding: clamp(6px,1.5vw,10px);
   background-color: #102346;
   border-radius: 4px;
   color:#9483B8; 
-  font-size: 12px;
+  font-size: clamp(11px,1.4vw,13px);
 }
 .Social-Media-Box:hover{
   background-color:  rgb(122 63 255 / 0.2);
@@ -59,9 +63,9 @@
   font-weight: bold;
 }
 .Header-Product{
-  font-size: 16px;
+  font-size: clamp(15px,2vw,17px);
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: clamp(12px,2vw,16px);
 }
 .Footer-Section2,.Footer-Section3,.Footer-Section4{
   display: flex;
@@ -71,7 +75,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 12px;
+  gap: clamp(10px,2vw,14px);
 }
 .Footer-List-Links{
   list-style: none;
@@ -79,7 +83,7 @@
 .Footer-List-Container a{
   text-decoration: none;
   color: #94A3B8;
-  font-size: 14px;
+  font-size: clamp(13px,1.6vw,14px);
 }
 .Footer-List-Container a:hover{
   color: rgb(163, 63, 255);
@@ -87,7 +91,7 @@
 
 /* Responsive CSS */
 /* Mobile Devices */
-@media (min-width:250px) and (max-width: 639px){
+@media (min-width: 100px) and (max-width: 767px){
   .Footer-Container{
     padding: 40px 10px 24px 10px;
 
@@ -138,36 +142,6 @@
   }
 }
 
-/* Mobile Landscape */
-@media (min-width:640px) and (max-width: 767px) {
-  .Footer-Container{
-    padding: 48px 32px 28px 32px;
-  }
-  .Footer-Grid{
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  .Footer-Viworktech-img{
-    width: 48px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-  }
-  .Footer-Header{
-    font-size: 16px;
-    margin-right: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .Footer-Section1{
-    grid-column: span 2;
-  }
-  .Footer-Brief-Paragraph{
-    max-width: 100%;
-  }
-}
-
 /* Tablets */
 @media (min-width: 767px) and (max-width:1023px){
   .Footer-Container{
@@ -203,22 +177,4 @@
   .Footer-Brief-Paragraph{
     font-size: 14px;
   }
-
-  /* Wider Screens */
-@media (min-width: 1536px) {
-  .Footer-Container {
-    padding: 72px 120px 40px 120px;
-  }
-  .Footer-Grid{
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .Footer-Header{
-    font-size: 20px;
-  }
-  .Footer-Brief-Paragraph{
-    font-size: 15px;
-    line-height: 22px;
-  }
- }
 }
